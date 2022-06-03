@@ -12,7 +12,7 @@ namespace HitachiTraining
             //ExceptionHandling exceptionHandling = new ExceptionHandling();
             //var result = exceptionHandling.cicilanPerBulan(10000, -2);
             //Console.WriteLine(result);
-            LINQPractice.fromCollection(null);
+            LINQPractice.fromJSON();
 
             Console.ReadLine();
 
