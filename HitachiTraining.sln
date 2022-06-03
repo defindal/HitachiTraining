@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitachiTraining", "HitachiTraining\HitachiTraining.csproj", "{BE373706-B09E-4DF1-99CC-BA34A5C9C847}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE373706-B09E-4DF1-99CC-BA34A5C9C847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE373706-B09E-4DF1-99CC-BA34A5C9C847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE373706-B09E-4DF1-99CC-BA34A5C9C847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE373706-B09E-4DF1-99CC-BA34A5C9C847}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1C7252C-10C9-4FBE-9888-ED699B2B6FA9}
+	EndGlobalSection
+EndGlobal
