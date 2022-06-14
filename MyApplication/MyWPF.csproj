@@ -11,6 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HitachiTraining\HitachiTraining.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="watermark.jpg" />
   </ItemGroup>
 

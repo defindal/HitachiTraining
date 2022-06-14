@@ -12,7 +12,7 @@ using System.Net;
 
 namespace HitachiTraining
 {
-    class LINQPractice
+    public class LINQPractice
     {
         private static String connectionString =
             "server=localhost;user id=root;persistsecurityinfo=True;database=sakila";
@@ -21,7 +21,7 @@ namespace HitachiTraining
             return Int32.Parse(x);
         }
 
-        public static void fromCollection(ICollection myCollection)
+        public List<int> fromCollection(ICollection myCollection)
         {
             //var result = from item in myCollection.AsQueryable()
             // select item;
@@ -49,7 +49,7 @@ namespace HitachiTraining
             // Console.WriteLine(odd.ToArray());
 
             odd.ToList().ForEach(i => Console.WriteLine(i));
-
+            return odd.ToList();
         }
 
         public static void fromRDBMS()
@@ -94,7 +94,7 @@ namespace HitachiTraining
             }
         }
 
-        public static void fromJSON()
+        public List<Gempa> fromJSON()
         {
             var url = "https://data.bmkg.go.id/DataMKG/TEWS/gempadirasakan.json";
 
@@ -105,19 +105,28 @@ namespace HitachiTraining
                 JObject myJSON = JObject.Parse(response);
 
                 var result = from gempa in myJSON["Infogempa"]["gempa"]
-                             where gempa["Lintang"].ToString().Contains("LU")
+                             // where gempa["Lintang"].ToString().Contains("LU")
                              orderby gempa["Tanggal"]
-                             select gempa;
+                             select new Gempa
+                             {
+                                 Tanggal = gempa["Tanggal"].ToString(),
+                                 Coordinates = gempa["Coordinates"].ToString(),
+                                 Dirasakan = gempa["Dirasakan"].ToString(),
+                                 Wilayah = gempa["Wilayah"].ToString()
+                             };                                 
 
-                result.ToList().ForEach(
-                            gempa =>
-                            {
-                                Console.Write(gempa["Tanggal"]);
-                                Console.Write(" - ");
-                                Console.WriteLine(gempa["Lintang"]);
-                            });
+                //result.ToList().ForEach(
+                //            gempa =>
+                //            {
+                //                Console.Write(gempa["Tanggal"]);
+                //                Console.Write(" - ");
+                //                Console.WriteLine(gempa["Lintang"]);
+                //            });
 
+                return result.ToList();
             }
+
+            
         }
     }
 }
