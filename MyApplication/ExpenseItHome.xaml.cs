@@ -28,7 +28,7 @@ namespace MyWPF
         private void NextButtonClick(object sender, RoutedEventArgs e)
         {
             ExpenseReportPage expenseReportPage = 
-                new ExpenseReportPage(DataID);
+                new ExpenseReportPage(this.peopleListBox.SelectedItem);
             this.NavigationService.Navigate(
                 expenseReportPage);
         }

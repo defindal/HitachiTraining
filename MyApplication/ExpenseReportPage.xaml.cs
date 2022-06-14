@@ -20,19 +20,24 @@ namespace MyWPF
     /// </summary>
     public partial class ExpenseReportPage : Page
     {
-        public ExpenseReportPage(TextBox idReport)
+        public ExpenseReportPage()
         {
             InitializeComponent();
-            IDReport.Content = new StringBuilder()
-                .Append("Report ID = ")
-                .Append(idReport.Text)
-                .ToString();
+            //IDReport.Content = new StringBuilder()
+            //    .Append("Report ID = ")
+            //    .Append(idReport.Text)
+            //    .ToString();
 
-            TextBox id = new TextBox();
-            id.Background = Brushes.Navy;
-            id.Text = idReport.Text;
-            controlStack.Children.Add(id);
+            //TextBox id = new TextBox();
+            //id.Background = Brushes.Navy;
+            //id.Text = idReport.Text;
+            //controlStack.Children.Add(id);
 
+        }
+
+        public ExpenseReportPage(object data) : this()
+        {
+            this.DataContext = data;
         }
     }
 }
