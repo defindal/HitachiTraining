@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HitachiTraining", "HitachiTraining\HitachiTraining.csproj", "{BE373706-B09E-4DF1-99CC-BA34A5C9C847}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApplication", "MyApplication\MyApplication.csproj", "{B7817506-38D3-4CFE-99FD-D8D4E91EF4D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWPF", "MyApplication\MyWPF.csproj", "{B7817506-38D3-4CFE-99FD-D8D4E91EF4D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
