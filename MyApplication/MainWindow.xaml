@@ -1,0 +1,19 @@
+﻿<Window x:Class="MyApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <TextBox HorizontalAlignment="Center" Margin="0,114,0,0" Text="Select a message option" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" RenderTransformOrigin="0.5,0.5" Height="18">
+
+        </TextBox>
+        <RadioButton x:Name="LeftRadio" Content="Left" HorizontalAlignment="Left" Margin="257,159,0,0" VerticalAlignment="Top" IsChecked="True"/>
+        <RadioButton x:Name="RightRadio" Content="Right" HorizontalAlignment="Left" Margin="418,159,0,0" VerticalAlignment="Top"/>
+        <Button Content="Display" HorizontalAlignment="Left" Margin="343,202,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+
+    </Grid>
+</Window>

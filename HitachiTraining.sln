@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitachiTraining", "HitachiTraining\HitachiTraining.csproj", "{BE373706-B09E-4DF1-99CC-BA34A5C9C847}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HitachiTraining", "HitachiTraining\HitachiTraining.csproj", "{BE373706-B09E-4DF1-99CC-BA34A5C9C847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApplication", "MyApplication\MyApplication.csproj", "{B7817506-38D3-4CFE-99FD-D8D4E91EF4D8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BE373706-B09E-4DF1-99CC-BA34A5C9C847}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE373706-B09E-4DF1-99CC-BA34A5C9C847}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE373706-B09E-4DF1-99CC-BA34A5C9C847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7817506-38D3-4CFE-99FD-D8D4E91EF4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7817506-38D3-4CFE-99FD-D8D4E91EF4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7817506-38D3-4CFE-99FD-D8D4E91EF4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7817506-38D3-4CFE-99FD-D8D4E91EF4D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
