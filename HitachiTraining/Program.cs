@@ -35,8 +35,8 @@ namespace HitachiTraining
             //    Console.ReadLine();
             //}
             ThreadPractice.singleThread();
-            ThreadPractice.multiThread();
-
+            // ThreadPractice.multiThread();
+            ThreadPractice.pooledThread();
             Console.ReadKey();
         }
     }

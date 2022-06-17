@@ -25,9 +25,10 @@ namespace HitachiTraining
             Console.WriteLine("Single Thread =" + miliseconds);
         }
 
-
+        
         public static void multiThread()
         {
+            
             ThreadClass job = new ThreadClass();
             
             var startTime = DateTime.Now;
@@ -37,11 +38,33 @@ namespace HitachiTraining
                     () => job.print(i)
                 );
                 t.Priority = (ThreadPriority) new Random().Next(0, 4);
-                t.Start();
+
+                
             }
             var endTime = DateTime.Now;
             var miliseconds = (endTime - startTime).TotalMilliseconds;
             Console.WriteLine("MultiThread = "  + miliseconds);
+        }
+
+        public static void print(object obj)
+        {
+            object[] temp = (object[]) obj;
+            Console.WriteLine("step-" + temp[0]);
+            Console.WriteLine(Thread.CurrentThread.Priority);
+            Thread.Sleep(8000);
+        }
+        // 
+        public static void pooledThread()
+        {
+            var startTime = DateTime.Now;
+            foreach (var i in toPrint)
+            {
+                ThreadPool.QueueUserWorkItem(new WaitCallback(print), 
+                    new object[] { i});
+            }
+            var endTime = DateTime.Now;
+            var miliseconds = (endTime - startTime).TotalMilliseconds;
+            Console.WriteLine("Thread Pool = " + miliseconds);
         }
     }
 }

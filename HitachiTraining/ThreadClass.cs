@@ -13,7 +13,7 @@ namespace HitachiTraining
         {
             Console.WriteLine("step-" + i);
             Console.WriteLine(Thread.CurrentThread.Priority);
-            // Thread.Sleep(3000);
+            Thread.Sleep(8000);
         }
     }
 }
