@@ -34,10 +34,31 @@ namespace HitachiTraining
             //{
             //    Console.ReadLine();
             //}
-            ThreadPractice.singleThread();
+            // ThreadPractice.singleThread();
             // ThreadPractice.multiThread();
-            ThreadPractice.pooledThread();
+            ThreadPractice.MultiTask();
+            ThreadPractice.AnyTask();
+            // Console.WriteLine(result);
+            VarDynamic();
             Console.ReadKey();
+        }
+
+        static void VarDynamic()
+        {
+            // VAR
+            // 1. mempermudah penulisan type
+            // 2. harus diinisialisasi dengan value 
+            var i = 6.7;
+            // var x;
+
+            // DYNAMIC
+            // 1. mendeklarasikan variable yang memang belum ditentukan typenya
+            // 2. biasanya karena mengambil dari 2 source berbeda ( xml, json)
+            //      atau output bisa beberapa kemungkinan
+            // 3. tidak harus diinisialisasi di awal
+            dynamic data;
+
+
         }
     }
 }
