@@ -15,25 +15,29 @@ namespace HitachiTraining
             //Console.WriteLine(result);
             // LINQPractice.fromJSON();
 
-            try
-            {
-                int? x = null;
-                // int y = null;
-                // x = 18;
+            //try
+            //{
+            //    int? x = null;
+            //    // int y = null;
+            //    // x = 18;
 
-                Debug.Assert(x.HasValue);
-                Console.WriteLine(x.Value);
-                int z = 6 / x.Value;
+            //    Debug.Assert(x.HasValue);
+            //    Console.WriteLine(x.Value);
+            //    int z = 6 / x.Value;
 
-            } catch(Exception ex)
-            {
-                // logging
-                Console.WriteLine(ex.Message);
-            }
-            finally
-            {
-                Console.ReadLine();
-            }
+            //} catch(Exception ex)
+            //{
+            //    // logging
+            //    Console.WriteLine(ex.Message);
+            //}
+            //finally
+            //{
+            //    Console.ReadLine();
+            //}
+            ThreadPractice.singleThread();
+            ThreadPractice.multiThread();
+
+            Console.ReadKey();
         }
     }
 }

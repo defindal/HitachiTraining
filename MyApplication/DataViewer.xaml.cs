@@ -1,6 +1,7 @@
 ﻿using HitachiTraining;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,7 +24,14 @@ namespace MyWPF
         public DataViewer()
         {
             InitializeComponent();
-            LinqViewer.ItemsSource = new LINQPractice().fromJSON();
+            // LinqViewer.ItemsSource = new LINQPractice().fromJSON();
+
+            ListDictionary listDictionary = new ListDictionary();
+            listDictionary.Add(62, "Indonesia");
+            listDictionary.Add(63, "Philippine");
+            listDictionary.Add(60, "Malaysia");
+
+            LinqViewer.ItemsSource = listDictionary;
         }
     }
 }
